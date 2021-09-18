@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "..\\.."
+		},
+		{
+			"name": "ESP32_promiscuis_mode",
+			"path": ".."
+		}
+	],
+	"settings": {}
+}
