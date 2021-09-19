@@ -6,7 +6,7 @@ This repository contains a passive indoor location sensor using an ESP32 and the
 Once uploaded this firmware periodically send WIFI and BLE advertizing information on the serial line.
 
 
-![doc/esp32_dev.jpg]
+![](doc/esp32_dev.jpg)
 
 
 Unlike other projects, the Wifi detection is done using the promiscious mode. This permit to observe every Wifi packet, 
