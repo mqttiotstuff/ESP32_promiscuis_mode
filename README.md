@@ -9,8 +9,7 @@ Once uploaded this firmware periodically send WIFI and BLE advertizing informati
 ![](doc/esp32_dev.jpg)
 
 
-Unlike other projects, the Wifi detection is done using the promiscious mode. This permit to observe every Wifi packet, 
-even if the Wifi are NOT connected to a given ACCESS POINT.
+Unlike other projects, the Wifi detection is done using the promiscious mode. This permit to observe every Wifi packet around, on the several channels.
 
 
 Applications of this repository are :
