@@ -5,23 +5,27 @@
 This repository contains a passive indoor location sensor using an ESP32 and the serial line. 
 Once uploaded this firmware periodically send WIFI and BLE advertizing information on the serial line.
 
+
+![doc/esp32_dev.jpg]
+
+
 Unlike other projects, the Wifi detection is done using the promiscious mode. This permit to observe every Wifi packet, 
 even if the Wifi are NOT connected to a given ACCESS POINT.
 
 
 Applications of this repository are :
 - Indoor location
-- Cyber pheripherial detection, and observation
-- Presence detection (better using BLE)
+- Device detection, and logging
+- Presence detection (both mobile, ble devices) 
 
 
-It use hi serial speed (921600 bauds), to preserve the ASCII format (more human readable).
+Metrics and observations are sent using serial hispeed (921600 bauds), in order to preserve the ASCII format (more human readable).
 
 BLE advertizing are published once received.
 WIFI communication, for each channels and sender are summarized every seconds
 
 
-## Output sample
+## Output sample published by the device on the serial :
 
 
 	S101BLE,ADDR=feed5df56200,RSSI=-59,ADVDATA=0201041bff57010034d61e2774aeb31319e9a550871633ce02feed5df56200
