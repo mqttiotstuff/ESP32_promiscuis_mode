@@ -265,7 +265,10 @@ void wifi_sniffer_packet_handler(void *buff, wifi_promiscuous_pkt_type_t type)
 	// int sendbufferlength = strlen(sendbuffer);
 
 	// printf("S%03d%s\n", sendbufferlength, sendbuffer );
+
+
 	struct EmitInfo info;
+
 	memcpy(&info.header.addr, hdr->addr2, 6);
 	info.rssi = ppkt->rx_ctrl.rssi;
 	info.header.channel = ppkt->rx_ctrl.channel;
